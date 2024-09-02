@@ -581,7 +581,7 @@ html {
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* start section6 */
 .section6 {
-    background-image: url(/images/download\ \(1\).jpg);
+    background-image: url(../images/download\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -710,7 +710,7 @@ html {
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* start section8 */
 .section8 {
-    background-image: url(/images/download\ \(1\).jpg);
+    background-image: url(../images/download\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
