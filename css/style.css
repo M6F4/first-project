@@ -1,0 +1,1046 @@
+/* start genral style */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+
+    font-family: "Open Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* end genral style */
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+/* start refactor */
+/* ///////////////////////////////title */
+.h2-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    padding: 12px;
+    font-weight: 500;
+    position: relative;
+}
+
+.h2-title {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+
+}
+
+.h2-title {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.h2-title:hover::before {
+    width: 50%;
+    transition: .3s linear;
+    background-color: rgb(111, 111, 255);
+}
+
+.h2-title:hover::after {
+    width: 50%;
+    transition: .3s linear;
+    background-color: rgb(111, 111, 255);
+}
+
+.h2-title:hover {
+    transition-delay: .3s;
+    color: white;
+}
+
+/* ///////////////////////////////title */
+/* end refactor */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* start header */
+.header {
+    width: 100%;
+    background-color: black;
+    height: 70px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container .logo img {
+    width: 85px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.header .container nav ul {
+    display: flex;
+}
+
+.header .container nav ul li a {
+    position: relative;
+    color: white;
+    padding: 25px 25px 25px 0;
+    font-size: 14px;
+}
+
+.header .container nav ul li a::before {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: rgb(160, 160, 247);
+
+}
+
+.header .container nav ul li a:hover {
+    color: rgb(160, 160, 247);
+}
+
+.header .container nav ul li a:hover::before {
+    width: calc(100% - 25px);
+    transition: .3s;
+    position: absolute;
+    bottom: 3px;
+    left: 1px;
+}
+
+/* end header */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* start section1 */
+.section1 {
+    margin-top: 70px;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 .content {
+    margin-top: -70px;
+    text-align: center;
+}
+
+.section1 .content h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: white;
+
+}
+
+.section1 .content p {
+    color: #ddd;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.section1 .content button {
+    padding: 12px 15px;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.section1 .content button:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.section1 .content .btn2 {
+    background-color: blue;
+    color: white;
+}
+
+/* end section1 */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* start section2 */
+.section2 {
+    height: 100vh;
+    position: relative;
+}
+
+.section2 .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ///////////////////////////////title */
+.section2 .container h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    padding: 12px;
+    font-weight: 500;
+    position: relative;
+}
+
+.section2 .container>h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+
+}
+
+.section2 .container>h2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.section2 .container>h2:hover::before {
+    width: 50%;
+    transition: .3s linear;
+    background-color: rgb(111, 111, 255);
+}
+
+.section2 .container>h2:hover::after {
+    width: 50%;
+    transition: .3s linear;
+    background-color: rgb(111, 111, 255);
+}
+
+.section2 .container>h2:hover {
+    transition-delay: .3s;
+    color: white;
+}
+
+/* ///////////////////////////////title */
+
+.section2 .container .content {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.section2 .container .div-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.425);
+    position: relative;
+
+}
+
+.section2 .container .div-flex i {
+    font-size: 25px;
+    color: rgba(30, 30, 255, 0.493);
+}
+
+.section2 .container .div-flex a {
+    color: rgba(30, 30, 255, 0.849);
+}
+
+.section2 .container .div-flex h3 {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.section2 .container .div-flex p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.637);
+}
+
+/* //////////////////////////////////////// */
+.section2 .container .div-flex::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: -1;
+
+}
+
+.section2 .container .div-flex:hover::before {
+    transition: .5s linear;
+    background-color: rgba(0, 0, 0, 0.833);
+    height: 100%;
+    width: 100%;
+}
+
+.section2 .container .div-flex:hover i {
+    color: rgb(159, 159, 255);
+}
+
+.section2 .container .div-flex:hover h3 {
+    color: white;
+}
+
+.section2 .container .div-flex:hover a {
+    color: rgb(186, 186, 252);
+}
+
+.section2 .container .div-flex:hover p {
+    color: #ddd;
+}
+
+/* //////////////////////////////////////// */
+/* end section2 */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* start section3 */
+.section3 {
+    height: 1000px;
+}
+.section3 .container{
+    width: 90%;
+}
+.section3 .container .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 20px;
+}
+
+.section3 .container .div {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.section3 .container .div img {
+    width: 100%;
+}
+
+.section3 .container .div .txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    height: 120px;
+    overflow: hidden;
+}
+
+.section3 .container .div .txt .icon {
+    display: flex;
+    gap: 10px;
+    transform: translateY(120px);
+    transition: .5s linear;
+}
+
+.section3 .container .div .txt .icon p {
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(119, 119, 254);
+    cursor: pointer;
+}
+
+.section3 .container .div .txt .icon p i {
+    color: rgba(0, 0, 0, 0.673);
+    font-weight: bold;
+}
+
+.section3 .container .div .txt>p {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: rgb(196, 196, 255);
+    transform: translateY(120px);
+    transition: .3s linear;
+
+}
+
+.section3 .container .div .txt h3 {
+    color: white;
+    transform: translateY(120px);
+    transition: .4s linear;
+}
+
+/* ////////////////////////////////// */
+.section3 .container .div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10%;
+}
+
+.section3 .container .div:hover::before {
+    background-color: rgba(0, 0, 0, 0.206);
+    height: 100%;
+    transition: .5s linear;
+}
+
+.section3 .container .div:hover .p,
+.section3 .container .div:hover .icon,
+.section3 .container .div:hover .h3 {
+    transform: translatey(0);
+}
+
+
+/* ////////////////////////////////// */
+/* end section3 */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* start section4 */
+.section4 {
+    min-height: 100vh;
+}
+
+.section4 .container .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.section4 .container .content .div {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.596);
+    position: relative;
+}
+
+.section4 .container .content .div .title {
+    display: flex;
+    gap: 10px;
+}
+
+.section4 .container .content .div i {
+    font-size: 22px;
+    color: rgba(30, 30, 252, 0.479);
+}
+
+.section4 .container .content .div h3 {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.section4 .container .content .div p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.637);
+    letter-spacing: 1px;
+}
+
+/* ///////////////////////////////// */
+.section4 .container .content .div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: -1;
+
+}
+
+.section4 .container .content .div:hover::before {
+    background-color: rgba(0, 0, 0, 0.833);
+    height: 100%;
+    width: 100%;
+    transition: .5s linear;
+}
+
+.section4 .container .content .div:hover h3 {
+    color: white;
+}
+
+.section4 .container .content .div:hover i {
+    color: rgb(209, 209, 255);
+}
+
+.section4 .container .content .div:hover p {
+    color: #ddd;
+}
+
+/* ///////////////////////////////// */
+/* end section4 */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* start section5 */
+.section5 {
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.123);
+
+}
+
+.section5 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section5 .container .div1 {
+    width: 50%;
+}
+
+.section5 .container .div1 h3 {
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.section5 .container .div1 p {
+    color: rgba(0, 0, 0, 0.788);
+}
+
+.section5 .container .div1 .p {
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.788);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.section5 .container .div2 {
+    margin-top: 150px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section5 .container .div2 img {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.section5 .container .div2 .icon span {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.section5 .container .div2 .icon span:first-child {
+    background-color: rgba(0, 0, 255, 0.484);
+}
+
+.section5 .container .div2 .icon span:hover {
+    background-color: rgba(0, 0, 255, 0.484);
+}
+
+/* end section5 */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* start section6 */
+.section6 {
+    background-image: url(/images/download\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section6 .div1 {
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section6 .div1>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section6 .div1>div i {
+    font-size: 30px;
+    color: rgb(140, 140, 249);
+    margin-bottom: 20px;
+}
+
+.section6 .div1>div h3 {
+    font-size: 22px;
+}
+
+.section6 .div1>div p {
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+/* end section6 */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* start section7 */
+.section7 {
+    height: 100vh;
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.123);
+}
+
+.section7 .container .content {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.section7 .container .div-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 350px;
+    width: 350px;
+    position: relative;
+
+}
+
+.section7 .container .div-flex a {
+    margin: 0 auto;
+    width: 120px;
+    color: rgba(30, 30, 255, 0.849);
+    padding: 10px;
+    border: 1px solid rgb(143, 143, 253);
+}
+
+.section7 .container .div-flex .div1 {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border: 1px solid rgb(147, 147, 248);
+    border-radius: 50%;
+    position: relative;
+}
+
+.section7 .container .div-flex .div1 h3 {
+    font-size: 30px;
+}
+
+.section7 .container .div-flex .div1 p {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.section7 .container .div-flex .div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.section7 .container .div-flex h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.section7 .container .div-flex p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.637);
+}
+
+/* ////////////////////////////////// */
+.section7 .container .content .div-flex::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 5%;
+    width: 100%;
+}
+
+.section7 .container .content .div-flex:hover::before {
+    background: rgba(0, 0, 0, 0.171);
+    height: 100%;
+    transition: .5s linear;
+}
+
+/* ////////////////////////////////// */
+/* end section7 */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* start section8 */
+.section8 {
+    background-image: url(/images/download\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.section8 .container {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section8 .container .div1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section8 .container .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section8 .container .title .txt h3 {
+    text-transform: capitalize;
+}
+
+.section8 .container .title .txt p {
+    font-size: 14px;
+    color: rgb(162, 162, 253);
+    margin-top: 5px;
+}
+
+.section8 .img img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.section8 .container .div1 .text p {
+    width: 70%;
+    color: #eee;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+/* end section8 */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* end section9 */
+.section9 {
+    height: 100vh;
+}
+
+.section9 .container .content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section9 .container .content .div1 {
+    width: 28%;
+    padding: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.section9 .container .content .div1 img {
+    width: 100%;
+}
+
+.section9 .container .content .div1 p {
+    text-transform: uppercase;
+}
+
+.section9 .container .content .div1 .img-icons {
+    position: relative;
+}
+
+.section9 .container .content .div1 .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(120, 120, 255);
+    color: white;
+    width: 35px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+    display: none;
+}
+
+/* ////////////////////////////////////// */
+.section9 .container .content .div1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10%;
+}
+
+.section9 .container .content .div1:hover::before {
+    background-color: rgba(0, 0, 0, 0.156);
+    height: 100%;
+    transition: .5s linear;
+}
+
+.section9 .container .content .div1:hover p {
+    color: rgb(91, 91, 255);
+    z-index: 2;
+    transition-delay: .4s;
+}
+
+.section9 .container .content .div1:hover h3 {
+    color: white;
+    z-index: 2;
+    transition-delay: .4s;
+}
+
+.section9 .container .content .div1:hover .icon {
+    display: flex;
+}
+
+.section9 .container .content .div1 .icon i {
+    color: white;
+}
+
+/* ////////////////////////////////////// */
+/* end section9 */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* end section10 */
+.section10 {
+    min-height: 100vh;
+}
+
+.section10 .container .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.section10 .container .content .div1 {
+    width: 28%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.section10 .container .content .div1 .name {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section10 .container .content .div1 .name i {
+    color: rgb(127, 127, 254);
+}
+
+.section10 .container .content .div1 p {
+    color: rgba(0, 0, 0, 0.669);
+}
+
+.section10 .container .content .div1 h3 {
+    width: 80%;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.section10 .container .content .div1 a {
+    margin-bottom: 20px;
+    color: rgb(127, 127, 254);
+}
+
+.section10 .container .content .div1 img {
+    width: 100%;
+}
+
+.section10 .container .content .div1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20%;
+}
+
+.section10 .container .content .div1:hover:before {
+    background-color: rgba(165, 165, 255, 0.448);
+    height: 100%;
+    transition: .5s linear;
+}
+
+/* end section10 */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* start section11 */
+.section11 {
+    background-color: rgba(0, 0, 0, 0.76);
+    height: 45vh;
+    display: flex;
+
+}
+
+.section11 .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.section11 .container img {
+    width: 200px;
+    height: 150px;
+}
+
+.section11 .container .div2 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.section11 .container .div2 p {
+    background-color: rgb(135, 135, 253);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.section11 .container .div3 p {
+    text-transform: capitalize;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.713);
+}
+
+.section11 .container .div2 p:hover {
+    background-color: rgb(93, 93, 255);
+    cursor: pointer;
+}
+
+/* end section11 */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* start refactor */
+/* ///////////////////////////////title */
+.h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    padding: 12px;
+    font-weight: 500;
+    position: relative;
+}
+
+.h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+
+}
+
+.h2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.h2:hover::before {
+    width: 50%;
+    transition: .3s linear;
+    background-color: rgb(111, 111, 255);
+}
+
+.h2:hover::after {
+    width: 50.5%;
+    transition: .3s linear;
+    background-color: rgb(111, 111, 255);
+}
+
+.h2:hover {
+    transition-delay: .3s;
+    color: white;
+}
+
+/* ///////////////////////////////title */
+/* /////////////////////////////////////display */
+.display-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+/* /////////////////////////////////////display */
+/* //////////////////////////////////////////////height padding margin background*/
+.h-100 {
+    height: 100%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.p-10 {
+    padding: 100px;
+}
+
+.bg-ccc {
+    background-color: rgba(128, 128, 128, 0.123)
+}
+
+.box-sh {
+    box-shadow: 0 0 10px #ddd;
+}
+
+/* //////////////////////////////////////////////width padding margin background*/
+
+/* end refactor */
